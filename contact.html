@@ -34,13 +34,31 @@
 
     <section id="showcase">
         <div class="container">
-            <article id="main">
-                <h1>About Me</h1>
+            <div id="main">
+                <h1>Contact</h1>
                 <hr>
 
-            </article>
+                <div>
+                    <form class="myform" action="process.php" method="POST">
+                        <div>
+                            <label>Name</label>
+                            <input type="text" name="name" placeholder="Enter your name">
 
-        </div>
+                        </div>
+                        <div>
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="Enter your email">
+                        </div>
+                        <div>
+                            <label>Message</label>
+                            <textarea style="height: 200px" name="message"></textarea>
+                        </div>
+                        <input class="button" type="submit" name="submit" value="submit">
+                    </form>
+
+                </div>
+
+            </div>
     </section>
 
     <footer>
